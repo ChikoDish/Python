@@ -1,5 +1,5 @@
 import sys
-from typing_extensions import Concatenate
+from typing import Counter
 
 # multiple inputs in a single line is
 # x,y,z = input('Enter number: ').split()
@@ -19,6 +19,11 @@ from typing_extensions import Concatenate
 # print(sys.getsizeof(my_generator))
 
 
-arr = ['d','d','e','o']
-concatenate = ''.join(arr)
-print(concatenate)
+# arr = ['d','d','e','o']
+# concatenate = ''.join(arr)
+# print(concatenate)
+
+#counter 
+
+list1 = [1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 6, 6]
+print(Counter(list1))
