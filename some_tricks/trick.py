@@ -25,10 +25,21 @@ from typing import Counter
 
 #counter 
 
-list1 = [1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 6, 6]
-print(Counter(list1))
+# list1 = [1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 6, 6]
+# print(Counter(list1))
 
 
-dict1 = {1: 'one', 2: 'two', 4: 'four'}
-print(dict1.get(3))
-print(dict1.setdefault(3, 'Default Value'))
+# dict1 = {1: 'one', 2: 'two', 4: 'four'}
+# print(dict1.get(3))
+# print(dict1.setdefault(3, 'Default Value'))
+
+
+# Sort Complex Iterables in One Go
+# Python built-in sorted() method can be used to sort any iterable in Python. The advantage of this sorted method is that it can sort any complex iterable easily.
+# You can also specify the order of the sorting, i.e., ascending or descending, and this method will do all the hard work for you.
+data = [{'name': 'John', 'age': 21},
+        {'name': 'Max', 'age': 19},
+        {'name': 'Lisa', 'age': 22}
+       ]
+sorted_data = sorted(data, key=lambda x: x['age'])
+print(sorted_data)
