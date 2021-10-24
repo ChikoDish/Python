@@ -12,3 +12,7 @@ import sys
 my_list = [ i for i in range(2000)]
 print(sum(my_list))
 print(sys.getsizeof(my_list))
+
+my_generator = (i for i in range(2000))
+print(sum(my_generator))
+print(sys.getsizeof(my_generator))
