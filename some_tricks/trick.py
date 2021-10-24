@@ -51,3 +51,4 @@ maths = 98
 
 condition = [physics > 60, chemistry > 60, maths > 60]
 print('Pass 'if all(condition) else 'Fail')
+print('Pass' if any(condition) else 'Fail')
