@@ -53,8 +53,17 @@ from typing import Counter
 # print('Pass 'if all(condition) else 'Fail')
 # print('Pass' if any(condition) else 'Fail')
 
-a = 100
-b = 200
-a, b = b, a  # swap values
-print(a)
-print(b)
+# a = 100
+# b = 200
+# a, b = b, a  # swap values
+# print(a)
+# print(b)
+
+
+def add_sub (num1, num2):
+    add = num1 + num2
+    sub = num1 - num2
+    return add, sub
+
+add, sub = add_sub(13,5)
+print(add, sub)
