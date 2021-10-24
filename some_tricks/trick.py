@@ -27,3 +27,8 @@ from typing import Counter
 
 list1 = [1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 6, 6]
 print(Counter(list1))
+
+
+dict1 = {1: 'one', 2: 'two', 4: 'four'}
+print(dict1.get(3))
+print(dict1.setdefault(3, 'Default Value'))
