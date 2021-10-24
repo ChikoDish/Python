@@ -43,3 +43,11 @@ data = [{'name': 'John', 'age': 21},
        ]
 sorted_data = sorted(data, key=lambda x: x['age'])
 print(sorted_data)
+
+
+physics = 80
+chemistry = 80
+maths = 98
+
+condition = [physics > 60, chemistry > 60, maths > 60]
+print('Pass 'if all(condition) else 'Fail')
