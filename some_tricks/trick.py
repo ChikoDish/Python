@@ -37,18 +37,24 @@ from typing import Counter
 # Sort Complex Iterables in One Go
 # Python built-in sorted() method can be used to sort any iterable in Python. The advantage of this sorted method is that it can sort any complex iterable easily.
 # You can also specify the order of the sorting, i.e., ascending or descending, and this method will do all the hard work for you.
-data = [{'name': 'John', 'age': 21},
-        {'name': 'Max', 'age': 19},
-        {'name': 'Lisa', 'age': 22}
-       ]
-sorted_data = sorted(data, key=lambda x: x['age'])
-print(sorted_data)
+# data = [{'name': 'John', 'age': 21},
+#         {'name': 'Max', 'age': 19},
+#         {'name': 'Lisa', 'age': 22}
+#        ]
+# sorted_data = sorted(data, key=lambda x: x['age'])
+# print(sorted_data)
 
 
-physics = 80
-chemistry = 80
-maths = 98
+# physics = 80
+# chemistry = 80
+# maths = 98
 
-condition = [physics > 60, chemistry > 60, maths > 60]
-print('Pass 'if all(condition) else 'Fail')
-print('Pass' if any(condition) else 'Fail')
+# condition = [physics > 60, chemistry > 60, maths > 60]
+# print('Pass 'if all(condition) else 'Fail')
+# print('Pass' if any(condition) else 'Fail')
+
+a = 100
+b = 200
+a, b = b, a  # swap values
+print(a)
+print(b)
